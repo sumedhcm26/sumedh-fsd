@@ -1,36 +1,52 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
+    background: linear-gradient(135deg, #0f0c29, #1a1a2e, #16213e);
+    color: #ffffff;
     line-height: 1.6;
-    background-color: #f4f6f9;
-    color: #333;
 }
 
+/* Container */
 .container {
     width: 85%;
     margin: auto;
-    overflow: hidden;
+    padding: 40px 0;
 }
 
+/* Header */
 header {
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: white;
-    padding: 40px 0;
     text-align: center;
+    padding: 80px 0 40px 0;
 }
 
 header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 42px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00f5ff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #bbbbbb;
+}
+
+/* Navigation */
 nav {
-    background: #111;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -40,71 +56,79 @@ nav ul {
 }
 
 nav ul li {
-    padding: 15px 20px;
+    padding: 18px 25px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-weight: bold;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #2a5298;
+    color: #00f5ff;
 }
 
+/* Sections */
 .section {
     padding: 60px 0;
 }
 
 .section h2 {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 28px;
-    color: #1e3c72;
+    margin-bottom: 40px;
+    font-size: 30px;
+    background: linear-gradient(90deg, #ff00ff, #00f5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.light {
-    background-color: #ffffff;
+/* Glass Card Effect */
+.card, .project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
 }
 
+.card:hover, .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.2);
+}
+
+/* Skills Grid */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
 }
 
-.card {
-    background: #2a5298;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
+/* Project Cards */
 .project-card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 5px solid #2a5298;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
 }
 
 .project-card h3 {
     margin-bottom: 10px;
-    color: #1e3c72;
+    color: #00f5ff;
 }
 
-footer {
-    background: #111;
-    color: white;
+/* Contact */
+#contact p {
     text-align: center;
-    padding: 20px 0;
+    margin: 10px 0;
+    color: #cccccc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background: rgba(255, 255, 255, 0.05);
+    margin-top: 40px;
+    font-size: 14px;
+    color: #aaaaaa;
 }
