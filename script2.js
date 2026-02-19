@@ -24,7 +24,10 @@ document.querySelectorAll("button").forEach(button => {
             } 
             else if (value === "÷") {
                 display.value += "/";
-            } 
+            }
+            else if (value === "−") {
+                display.value += "-";
+            }
             else {
                 display.value += value;
             }
