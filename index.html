@@ -2,46 +2,93 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Student Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumedh | Student Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 <header>
-<h1>Student Portfolio</h1>
-<p>Computer Engineering Student</p>
+    <nav>
+        <h2 class="logo">Sumedh</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Hello, I'm <span>Sumedh</span></h1>
+        <p>Computer Engineering Student | Aspiring Full Stack Developer</p>
+        <a href="#contact" class="btn">Let's Connect</a>
+    </div>
 </header>
 
-<section class="about">
-<h2>About Me</h2>
-<p>Hello! I am a third year Computer Engineering student passionate about web development.</p>
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a passionate third-year Computer Engineering student at MIT World Peace University.
+            I enjoy building clean web interfaces and solving real-world problems using technology.
+            Currently exploring Full Stack Development and Machine Learning.
+        </p>
+    </div>
 </section>
 
-<section class="skills">
-<h2>Skills</h2>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>PHP</li>
-</ul>
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">C / C++</div>
+        <div class="skill">Python</div>
+    </div>
 </section>
 
-<section class="projects">
-<h2>Projects</h2>
-<p>Student Portfolio Management System</p>
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Student Portfolio Website</h3>
+            <p>Responsive portfolio built using HTML & CSS and deployed using GitHub Pages.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>AI-Based Itinerary Planner</h3>
+            <p>An intelligent tool that generates travel plans based on user preferences using AI algorithms.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>OrthoKavach</h3>
+            <p>Wearable device design project aimed at improving ankle stability and injury prevention.</p>
+        </div>
+
+    </div>
 </section>
 
-<section class="contact">
-<h2>Contact</h2>
-<p>Email: student@example.com</p>
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="card">
+        <p>Email: sumedh@example.com</p>
+        <p>GitHub: github.com/sumedh</p>
+        <p>LinkedIn: linkedin.com/in/sumedh</p>
+    </div>
 </section>
 
 <footer>
-<p>© 2025 Student Portfolio</p>
+    <p>© 2025 Sumedh | Built with ❤️ using HTML & CSS</p>
 </footer>
 
 </body>
 </html>
-
